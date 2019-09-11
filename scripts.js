@@ -8,7 +8,13 @@ For example, given the multiset {15, 5, 20, 10, 35, 15, 10}, it would return tru
 Given the multiset {15, 5, 20, 10, 35}, it would return false, since we can't split it up into two subsets that add up to the same sum.
 */
 
+const sorter = (yourArray) => {
+  let copied = yourArray.slice()
+  return copied.sort(function(a,b){return a-b})
+}
 
+let test0 = [15, 5, 20, 10, 35, 15, 10]
+console.log(sorter(test0))
 
 $(document).ready(function() {
 
